@@ -1,0 +1,10 @@
+.jumbotron {
+    background-image: url("/img/../assets/background.jpeg");
+    background-size: cover;
+    background-color: rgba(25, 25, 112, 0.7);
+    height: 65vh;
+}
+
+.textbox{
+    background-color: white;
+}
