@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  tabs = ["Experience", "Education", "Skills", "Projects", "Contact"]
-
   constructor() { }
 
   ngOnInit() {
