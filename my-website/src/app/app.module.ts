@@ -1,9 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import "materialize-css";
-import { MaterializeModule } from 'angular2-materialize';
 
-import { MaterializeDirective } from 'angular2-materialize';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -35,13 +32,11 @@ import { MediaScrollerComponent } from './media-scroller/media-scroller.componen
     Hw2P4Component,
     Hw2P5Component,
     MediaScrollerComponent,
-    MaterializeDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NvD3Module,
-    MaterializeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
