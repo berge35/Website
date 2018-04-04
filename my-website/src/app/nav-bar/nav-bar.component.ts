@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'nav-bar',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+   }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import "materialize-css";
+import { MaterializeModule } from 'angular2-materialize';
 
+import { MaterializeDirective } from 'angular2-materialize';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -17,6 +20,7 @@ import { Hw2P2Component } from './projects/info-viz/hw2-p2/hw2-p2.component';
 import { Hw2P3Component } from './projects/info-viz/hw2-p3/hw2-p3.component';
 import { Hw2P4Component } from './projects/info-viz/hw2-p4/hw2-p4.component';
 import { Hw2P5Component } from './projects/info-viz/hw2-p5/hw2-p5.component';
+import { MediaScrollerComponent } from './media-scroller/media-scroller.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +33,15 @@ import { Hw2P5Component } from './projects/info-viz/hw2-p5/hw2-p5.component';
     Hw2P2Component,
     Hw2P3Component,
     Hw2P4Component,
-    Hw2P5Component
+    Hw2P5Component,
+    MediaScrollerComponent,
+    MaterializeDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NvD3Module,
+    MaterializeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

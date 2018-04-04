@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component'
 import { ProjectsComponent} from './projects/projects.component';
 import {AboutComponent} from './about/about.component';
-import { InfoVizComponent } from './projects/info-viz/info-viz/info-viz.component'
+import { InfoVizComponent } from './projects/info-viz/info-viz/info-viz.component';
+import { MediaScrollerComponent } from './media-scroller/media-scroller.component';
 const routes: Routes = [
   {
     path: '',
@@ -27,7 +28,10 @@ const routes: Routes = [
   {
     path: 'about-me',
     component: AboutComponent
-    
+  },
+  {
+    path: 'stest',
+    component: MediaScrollerComponent
   },
 
 ];

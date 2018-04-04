@@ -1,14 +1,24 @@
-<div class="container-fluid bg">
+<div id="cont" class="valign-wrapper center-align black">
+    <!-- Show Intro Card -->
+        <div *ngIf="showCard" class="row valign-center">
+            <div class="col l6 m6 offset-l3 offset-m3">
+                <!-- Promo Content 1 goes here -->
+                <div class="card blue accent-3">
+                    <div class="center card-content black-text">
+                        <img class="circle" src="../../assets/profile.webp" style="width:50%; height: auto;">
+                        <p class="flow-text">Hey! I'm Chris. Thanks for checking out my page. I do all sorts of development. I enjoy making games, simulations, but am particularly interested in web dev.</p><br>
+                        <button class="btn waves-effect waves-dark grey lighten-5 black-text right" (click)="showScroller()">
+                            Check out what I do
+                        </button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="vol l3 m3"></div>
+        </div>
 
-  <div class="row justify-content-center vertical-center">
-    <div class="col-lg-3" >
-      <img src="../assets/profile.webp">
-    </div>
-    <div class="col-lg-3 textbox">
-      <div class="row justify-content-center"><h1 id="who">Who am I?</h1></div>
-      <div class="row justify-content-center"></div>
-    </div>
-  </div>
-
-
+        <!-- Show Media Scroller -->
+        <div *ngIf="!showCard" class="row valign-center">
+            <media-scroller></media-scroller>
+        </div>
 </div>

@@ -1,32 +1,8 @@
-body, html {
-    height: 100%;
-}
-.bg { 
-    /* The image used */
-    background-image: url("/img/../assets/background.jpeg");
-    background-color: rgba(25, 25, 112, 0.7);
-    /* Half height */
-    height: 65vh; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#cont{
+    height: 100vh;
+    width: 100%;
 }
 
-.vertical-center {
-  min-height: 65%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 65vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-content: flex-end;
-
-}
-
-.textbox{
-    background-color: aqua;
-}
-
-#who{
-    margin-top: 15px;
+.background{
+    background-image: url('../../assets/bg.svg') no-repeat;
 }
