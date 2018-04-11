@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MediaScrollerComponent } from '../media-scroller/media-scroller.component';
 
+
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
@@ -13,6 +14,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
   //hide card and show media-scroller
